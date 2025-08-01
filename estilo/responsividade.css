@@ -1,0 +1,261 @@
+/* === CSS BASE MANTIDO PARA LAYOUT DE COMPUTADOR === */
+
+/* ... SEU CSS COMPLETO ACIMA (JÁ FOI INCLUÍDO) ... */
+
+/* === RESPONSIVIDADE PARA TABLET E CELULAR COM MESMO LAYOUT DO COMPUTADOR EM ESCALA MENOR === */
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 95%;
+  }
+
+  header {
+    display: none;
+  }
+
+  .home {
+    padding: 20% 10% 5% 10%;
+    background-size: cover;
+  }
+
+  .home .titulo-principal h1 {
+    font-size: 22px;
+  }
+
+  .home .titulo-principal p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .home .redes-socias{
+    display: none;
+  }
+
+  .home .botao {
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .home .bloco {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+  }
+
+  .revelacao div {
+    margin: 10px;
+    gap: 20px;
+    
+  }
+
+ .revelacao .tama {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .revelacao .tama p {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    min-width: 120px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .depoimento-revelacao{
+    display: none;
+  }
+
+  .gestante .imagens,
+  .newborn .imagens {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .gestante .block,
+  .newborn .block {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .gestante .block div,
+  .newborn .block div {
+    width: 90%;
+    height: auto;
+  }
+
+  .gestante button,
+  .newborn button,
+  .revelacao button {
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  .sobre .paragrafo {
+    margin: 0 30px;
+  }
+
+  .valores-container,
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .valor,
+  .contato-info,
+  .mapa {
+    width: 90% !important;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    height: 300px;
+  }
+}
+
+@media (max-width: 700px) {
+  .home .titulo-principal h1{
+    font-size: 17px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+  }
+
+  .home .botao{
+    display: flex;
+    gap: 10px;
+  }
+
+  .home .bloco{
+    display: none;
+    gap: 10px;
+  }
+
+  .btna{
+    padding: 0.5rem 1.5rem;
+    font-size: 12px;
+  }
+
+  .frase-destaque{
+    font-size: 15px;
+  }
+
+  .depoimento-revelacao{
+    opacity: 0;
+  }
+
+  .gestante .imagens{
+    gap: 10px;
+  }
+
+  .gestante .imagens img{
+    height: 100px;
+  }
+
+  .gestante .block{
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+  }
+
+  .gestante .block div{
+    height: 100px;
+    width: 200px;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .gestante .block div p{
+    font-size: 12px;
+  }
+
+  .gestante .block div i{
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  
+  .gestante .frase{
+    font-size: 11px;
+  }
+
+  .gestante .frase p{
+    line-height: 15px;
+  }
+
+  .gestante button{
+    height: 30px;
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+    
+  }
+
+  .gestante button span{
+    font-size: 12px;
+  }
+  .newborn p{
+    font-size: 17px;
+    margin: 0px 10px;
+  }
+
+  .newborn .imagens{
+    display: flex;
+    gap: 10px;
+  }
+
+  .newborn .imagens img{
+    height: 70px;
+    width: 100px;
+  }
+
+  .newborn .block{
+    display: flex;
+    margin: 10px 50px;
+    gap: 10px;
+
+  }
+
+  .newborn .block div{
+    height: 100px;
+    width: 200px;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .newborn .block div h3{
+    font-size: 14px;
+  }
+  .newborn .block div p{
+    font-size: 12px;
+  }
+
+  .newborn .block div i{
+    font-size: 16px;
+    padding-bottom: 0px;
+  }
+
+  .newborn button{
+    height: 30px;
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+    
+  }
+
+  .newborn button span{
+    font-size: 12px;
+  }
+
+
+
+}

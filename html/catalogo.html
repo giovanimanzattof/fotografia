@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estúdio Marília Manzatto Furlan - Gestante & Newborn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fdf6fb;
+      color: #444;
+      line-height: 1.7;
+      scroll-behavior: smooth;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Cabeçalho */
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #fff1f8, #e8f4ff);
+      border-radius: 15px;
+      margin-bottom: 30px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8em;
+      color: #e91e63;
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #6a5acd;
+      font-style: italic;
+      margin-top: 10px;
+    }
+
+    /* Navegação */
+    nav {
+      background: #6a5acd;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1.1em;
+      transition: text-shadow 0.3s;
+    }
+
+    nav a:hover {
+      text-shadow: 0 0 5px white;
+    }
+
+    /* Seções */
+    .section {
+      background: white;
+      border-radius: 15px;
+      padding: 30px;
+      margin: 40px auto;
+      max-width: 900px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      color: #e91e63;
+      font-size: 1.8em;
+      margin-bottom: 25px;
+    }
+
+    /* Gestante */
+    .packages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .package {
+      flex: 1;
+      min-width: 250px;
+      border: 2px solid #ffe6f2;
+      border-radius: 12px;
+      padding: 25px;
+      background: #f8fbff;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .package:hover {
+      transform: translateY(-8px);
+    }
+
+    .package h3 {
+      font-size: 1.5em;
+      color: #6a5acd;
+      margin-bottom: 10px;
+    }
+
+    .package .price {
+      font-size: 1.6em;
+      font-weight: 700;
+      color: #d46abf;
+      margin: 15px 0;
+    }
+
+    .package ul {
+      list-style: none;
+      margin: 15px 0;
+      text-align: left;
+      font-size: 0.95em;
+    }
+
+    .package ul li {
+      margin-bottom: 8px;
+      padding-left: 25px;
+      position: relative;
+    }
+
+    .package ul li::before {
+      content: "🌸";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .package .info {
+      font-size: 0.9em;
+      color: #777;
+      font-style: italic;
+    }
+
+    /* Destaque Newborn */
+    .package:nth-child(5) {
+      border-color: #e91e63;
+      position: relative;
+    }
+
+    .package:nth-child(5)::after {
+      content: "Exclusivo!";
+      position: absolute;
+      top: -12px;
+      right: 20px;
+      background: #e91e63;
+      color: white;
+      font-size: 0.85em;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    /* Dicas Newborn */
+    .tips {
+      background: #fff9fb;
+      border-left: 5px solid #e91e63;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 0.95em;
+    }
+
+    .tips ul {
+      list-style: none;
+      margin: 15px 0;
+    }
+
+    .tips ul li {
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .tips ul li::before {
+      content: "💡";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .tips p {
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+
+    .important {
+      background: #fff3cd;
+      border: 1px solid #ffeaa7;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 0.95em;
+      margin: 15px 0;
+      color: #856404;
+    }
+
+    /* Formulário */
+    .form-box {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: #555;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ffe6f2;
+      border-radius: 10px;
+      font-size: 1em;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: #d46abf;
+      outline: none;
+    }
+
+    .form-group textarea {
+      height: 120px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      background: #e91e63;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 1.1em;
+      border-radius: 30px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn-submit:hover {
+      background: #c2185b;
+    }
+
+    /* Rodapé */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #f8e6ff;
+      margin-top: 50px;
+      color: #555;
+    }
+
+    footer h3 {
+      font-size: 1.6em;
+      color: #6a5acd;
+      margin-bottom: 10px;
+    }
+
+    .social a {
+      color: #6a5acd;
+      font-size: 1.5em;
+      margin: 0 10px;
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social a:hover {
+      color: #e91e63;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      .package {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav>
+    <ul>
+      <li><a href="#gestante">Gestante</a></li>
+      <li><a href="#newborn">Newborn</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Cabeçalho -->
+  <div class="container">
+    <header>
+      <h1>Estúdio Marília Manzatto Furlan</h1>
+      <p>Fotografia & Vídeo com sensibilidade e emoção</p>
+    </header>
+
+    <!-- Gestante -->
+    <section id="gestante" class="section">
+      <h2>Ensaio Gestante</h2>
+      <p style="text-align: center; font-style: italic; color: #6a5acd; margin-bottom: 20px;">
+        “Ser mãe é entender que Deus fez da genética o amor da vida.”
+      </p>
+      <div class="packages">
+        <div class="package">
+          <h3>Pacote 1</h3>
+          <ul>
+            <li>1 troca de roupa</li>
+            <li>5 arquivos digitais</li>
+            <li>5 revelações 15x21</li>
+          </ul>
+          <div class="price">R$ 190,00</div>
+          <p class="info">Em 3x no cartão | À vista: 10% de desconto</p>
+        </div>
+        <div class="package">
+          <h3>Pacote 2</h3>
+          <ul>
+            <li>2 trocas de roupa</li>
+            <li>10 arquivos digitais</li>
+            <li>10 revelações 15x21</li>
+          </ul>
+          <div class="price">R$ 320,00</div>
+          <p class="info">Em 3x no cartão | À vista: 10% de desconto</p>
+        </div>
+        <div class="package">
+          <h3>Pacote 3</h3>
+          <ul>
+            <li>3 trocas de roupa</li>
+            <li>20 arquivos digitais</li>
+            <li>20 revelações 15x21</li>
+          </ul>
+          <div class="price">R$ 470,00</div>
+          <p class="info">Em 3x no cartão | À vista: 10% de desconto</p>
+        </div>
+        <div class="package">
+          <h3>Pacote 4</h3>
+          <ul>
+            <li>3 trocas de roupa</li>
+            <li>30 arquivos digitais</li>
+            <li>30 revelações 15x21</li>
+          </ul>
+          <div class="price">R$ 650,00</div>
+          <p class="info">Em 3x no cartão | À vista: 10% de desconto</p>
+        </div>
+        <div class="package">
+          <h3>Pacote 5 Exclusivo</h3>
+          <ul>
+            <li>3 trocas de roupa</li>
+            <li>30 arquivos digitais</li>
+            <li>30 revelações 15x21</li>
+            <li>Tratamento especial de cor e luz</li>
+          </ul>
+          <div class="price">R$ 790,00</div>
+          <p class="info">Em 3x no cartão | À vista: 10% de desconto</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newborn -->
+    <section id="newborn" class="section">
+      <h2>Ensaio Newborn</h2>
+      <p style="text-align: center; font-style: italic; color: #4a90e2; margin-bottom: 20px;">Olhar e Amar com sensibilidade</p>
+
+      <div class="tips">
+        <p><strong>Dicas para o ensaio:</strong></p>
+        <ul>
+          <li>Dê um banho relaxante no bebê antes de sair de casa.</li>
+          <li>Mantenha o bebê acordado antes da sessão — brinque, faça cócegas.</li>
+          <li>Mantenha um ambiente tranquilo e converse com ele.</li>
+          <li>Não faça visitas no dia do ensaio.</li>
+          <li>Leve a chupeta — é um calmante eficaz.</li>
+          <li>Amamente o bebê cerca de 30 minutos antes, com barriga cheia.</li>
+          <li>É normal o bebê ficar agitado — é um ambiente novo.</li>
+          <li>Fotos com irmão: faça no início ou fim da sessão.</li>
+        </ul>
+      </div>
+
+      <div class="important">
+        <strong>IMPORTANTE:</strong> Não garantimos poses. Tudo depende do sono e conforto do bebê.<br>
+        <strong>Período ideal:</strong> De 5 a 15 dias de vida (recomendamos 7 a 10 dias).
+      </div>
+
+      <h3 style="text-align: center; margin: 20px 0; color: #6a5acd;">Sessões no Estúdio</h3>
+      <div class="packages">
+        <div class="package">
+          <h3>Mini Sessão Interna</h3>
+          <ul>
+            <li>15 fotos em alta resolução</li>
+            <li>5 fotos reveladas (15x21)</li>
+            <li>1 cenário</li>
+          </ul>
+          <div class="price">R$ 649,00</div>
+          <p>ou 6x de R$ 95,00</p>
+        </div>
+        <div class="package">
+          <h3>Sessão Completa Interna</h3>
+          <ul>
+            <li>20 fotos em alta resolução</li>
+            <li>20 fotos reveladas (15x21)</li>
+            <li>2 cenários</li>
+          </ul>
+          <div class="price">R$ 730,00</div>
+          <p>ou 6x de R$ 130,00</p>
+        </div>
+      </div>
+
+      <h3 style="text-align: center; margin: 30px 0 20px; color: #6a5acd;">Sessões na Sua Casa</h3>
+      <div class="packages">
+        <div class="package">
+          <h3>Mini Sessão Externa</h3>
+          <ul>
+            <li>15 fotos em alta resolução</li>
+            <li>5 fotos reveladas (15x21)</li>
+            <li>1 cenário</li>
+          </ul>
+          <div class="price">R$ 650,00</div>
+          <p>ou 6x de R$ 120,00</p>
+        </div>
+        <div class="package">
+          <h3>Sessão Completa Externa</h3>
+          <ul>
+            <li>20 fotos em alta resolução</li>
+            <li>20 fotos reveladas (15x21)</li>
+            <li>2 cenários</li>
+          </ul>
+          <div class="price">R$ 990,00</div>
+          <p>ou 6x de R$ 180,00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section">
+      <h2>Agende seu Ensaio</h2>
+      <p style="text-align: center; margin-bottom: 20px;">Preencha o formulário e converse com a gente pelo WhatsApp!</p>
+
+      <div class="form-box">
+        <div class="form-group">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Seu nome completo" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefone (com DDD)</label>
+          <input type="tel" id="phone" placeholder="(19) 99999-8888" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Serviço de Interesse</label>
+          <select id="service" required>
+            <option value="">Selecione</option>
+            <option value="Ensaio Gestante">Ensaio Gestante</option>
+            <option value="Ensaio Newborn">Ensaio Newborn</option>
+            <option value="Família / Batizado">Família / Batizado</option>
+            <option value="Vídeo de Gestação">Vídeo de Gestação</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem (opcional)</label>
+          <textarea id="message" placeholder="Conte um pouco sobre seu bebê ou gestação..."></textarea>
+        </div>
+        <button type="button" class="btn-submit" onclick="enviarParaWhatsApp()">Enviar no WhatsApp 📲</button>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <h3>Estúdio Marília Manzatto Furlan</h3>
+      <p>WhatsApp: (19) 3463-8925</p>
+      <p>Instagram: <a href="https://instagram.com/marilimanzatto" target="_blank">@marilimanzatto</a></p>
+      <div class="social">
+        <a href="https://instagram.com/marilimanzatto" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/551934638925" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://facebook.com/marilimanzatto" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <p style="margin-top: 15px; font-size: 0.9em;">© 2025 Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <!-- Script WhatsApp -->
+  <script>
+    function enviarParaWhatsApp() {
+      const nome = document.getElementById("name").value.trim();
+      const telefone = document.getElementById("phone").value.trim();
+      const servico = document.getElementById("service").value;
+      const mensagem = document.getElementById("message").value.trim();
+
+      if (!nome || !telefone || !servico) {
+        alert("Por favor, preencha os campos obrigatórios: Nome, Telefone e Serviço.");
+        return;
+      }
+
+      let texto = `Olá, Marília Manzatto Furlan!%0A%0A`;
+      texto += `Meu nome é *${nome}*.%0A`;
+      texto += `Telefone: ${telefone}%0A`;
+      texto += `Gostaria de agendar um *${servico}*.`;
+
+      if (mensagem) {
+        texto += `%0A%0AMensagem: ${mensagem}`;
+      }
+
+      texto += `%0A%0A*Enviado pelo site.*`;
+
+      const numero = "551934638925"; // Substitua pelo seu número completo
+      const link = `https://wa.me/${numero}?text=${texto}`;
+
+      window.open(link, '_blank');
+    }
+  </script>
+
+</body>
+</html>

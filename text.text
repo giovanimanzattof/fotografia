@@ -1,0 +1,171 @@
+titulo da pagina (Fotografia)
+
+titulo (Marilia Manzatto Furlan)
+
+Home(
+    A fotografia é uma forma de sentir, tocar, e amar. É um presente visaul de realidade.
+    A fotografia não é apenas capturar luz - é aprender a vê-la.
+    Não se trata de ter a melhor cãmera, mais do melhor olhar.
+    Pronto para eternizar seus momentos mais especiais? Entre em contato e vamos conversar!
+)
+
+button (agendar-se)
+
+4 imagens uma passando a outra
+
+revelacao de foto(
+    titulo Tamanho
+    10x15
+    13x18
+    15x21
+    20x25
+    20x30
+
+)
+
+button (ver preços)
+
+polaroid(
+    tamanhos
+    valores
+)
+
+
+gestante(
+    Celebrando a Beleza da Gravidez
+    Fotografia que capturam a essência e o amor em cada curva, cada olhar, cada momento único.
+    button Saiba Mais link pdf
+)
+
+newborn(
+    Fotografia NewBorn cheia de termura, delicadeza e amor. cada clique conta uma historia única.
+    <div>
+        <i class="ri-shield-fill"></i>
+        Seguranç em Primeiro Lugar
+        Todas as sessõs são realizadas com cuida profissional e supervisão constante do bebê.
+
+    </div>
+    <div>
+        <i class="ri-star-s-fill"></i>
+        Experiência única
+        transformando os primeiros momentos do seu bebê em arte para toda vida.
+    </div>
+
+    button Saiba Mais link pdf
+)
+
+sobre nos(
+    imagem
+    Conheça nossa história, valores e o que nos motiva a criar soluções incríveis.
+    Há mais de 10 anos no mercado, Marília Manzatto Furlan construiu sua trajetória com o objetivo de eternizar momentos únicos através da fotografia. O que começou como um pequeno estúdio, movido por amor à arte e à emoção, se transformou em uma marca reconhecida na região pela sensibilidade e profissionalismo.
+    Desde o início, Marília acreditou que cada clique carrega uma história especial — e que cada casal merece ter suas memórias registradas com cuidado, criatividade e olhar atento aos detalhes. Assim, a fotógrafa conquistou espaço, aprimorou técnicas e desenvolveu um estilo próprio, marcado pelo fotojornalismo e pela entrega rápida de imagens autênticas.
+    Hoje, Marília Manzatto Furlan é referência em fotografia de casamentos e ensaios no interior de São Paulo, celebrada pela qualidade do trabalho, pela dedicação a cada cliente e pelo compromisso em transformar momentos em lembranças inesquecíveis.
+    <div>
+        <i class="ri-sparkling-2-line"></i>
+        <h3>Paixão pelo Trabalho</h3>
+        <p>Fazemos tudo com amor e dedicação, <br> buscando sempre superar expectativas</p>
+    </div>
+    <div class="integridade">
+        <i class="ri-shake-hands-fill"></i>
+        <h3>Integridade</h3>
+        <p>Trabalhamos com honestidade, transparência e respeito em todas as relações.</p>
+    </div>
+    <div class="inovacao">
+        <i class="ri-rocket-2-fill"></i>
+        <h3>Inovação</h3>
+        <p>Buscamos sempre os melhores recursos e métodos para entregar resultados diferenciados.</p>
+    </div>
+)
+
+
+equipe(
+    imagemg
+    giovani manzatto Furlan
+    Laboratorista
+
+    imagem
+    Marilia manzatto Furlan
+    Fotografa
+)
+
+
+contato(
+    <h2>Contato</h2>
+    <p>Tire suas dúvidas, solicite um orçamento ou agende uma reunião conosco.</p>
+    <i class="ri-mail-line"></i>
+    <h3>Email:</h3>
+    <p>Lab.revelar@gmail.com</p>
+    <i class="ri-phone-line"></i>
+    <h3>Telefone:</h3>
+    <p>19 3463-8925</p>
+    <i class="ri-map-pin-line"></i>
+    <h3>Endereço:</h3>
+    <p>Rua Santa Barbara, 143 <br> Centro, Santa Barbara d'Oeste, SP - Brasil</p>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.3996479244506!2d-47.41426582405851!3d-22.750545279365348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c89db5e82e3d73%3A0xf9d3b221c540f63d!2sEstudio%20Marilia%20Mazatto%20Furlan!5e0!3m2!1spt-BR!2sbr!4v1751108908396!5m2!1spt-BR!2sbr"
+    width="500" height="400"
+    style="border: 0;"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="redes-social">
+    <i id="insta" class="ri-instagram-line"></i>
+    <i id="faceb" class="ri-facebook-fill"><a href=""></a></i>
+    </div>
+)
+
+© 2025 Marilia Manzatto Furlan. Todos os direitos reservados.
+
+
+<div id="precos" class="precos-conteudo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quantidade</th>
+                            <th>10x15</th>
+                            <th>13x18</th>
+                            <th>15x21</th>
+                            <th>20x25</th>
+                            <th>20x30</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Até 5 fotos</td>
+                            <td>R$ 3,00</td>
+                            <td>R$ 5,00</td>
+                            <td>R$ 5,00</td>
+                            <td>R$ 12,00</td>
+                            <td>R$ 14,00</td>
+                        </tr>
+                        <tr>
+                            <td>De 6 a 10 fotos</td>
+                            <td>R$ 1,80</td>
+                            <td>R$ 4,50</td>
+                            <td>R$ 4,50</td>
+                            <td>R$ 10,00</td>
+                            <td>R$ 12,00</td>
+                        </tr>
+                        <tr>
+                            <td>Acima de 10 fotos</td>
+                            <td>R$ 1,20</td>
+                            <td>R$ 4,00</td>
+                            <td>R$ 4,00</td>
+                            <td>R$ 8,00</td>
+                            <td>R$ 10,00</td>
+                        </tr>
+                        <tr>
+                            <td>Acima de 30 fotos</td>
+                            <td>R$ 1,10</td>
+                            <td>R$ 3,50</td>
+                            <td>R$ 3,50</td>
+                        </tr>
+                        <tr>
+                            <td>Acima de 50 fotos</td>
+                            <td>R$ 1,00</td>
+                        </tr>
+                        <tr>
+                            <td>Acima de 100 fotos</td>
+                            <td>R$ 0,90</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
