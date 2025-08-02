@@ -9,7 +9,7 @@
     font-size: 95%;
   }
 
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -31,7 +31,7 @@
     width: 100%;
   }
 
-  .home .redes-socias{
+  .home .redes-socias {
     display: none;
   }
 
@@ -48,10 +48,9 @@
   .revelacao div {
     margin: 10px;
     gap: 20px;
-    
   }
 
- .revelacao .tama {
+  .revelacao .tama {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -67,20 +66,40 @@
     min-width: 80px;
     max-width: 120px;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
   .precos-conteudo {
     overflow-x: auto;
     padding: 20px 10px;
+    -webkit-overflow-scrolling: touch;
   }
 
   .precos-conteudo table {
-    min-width: 600px;
     width: 100%;
+    min-width: unset;
+    table-layout: fixed;
+    word-wrap: break-word;
+    font-size: 14px;
   }
 
-  .depoimento-revelacao{
+  .precos-conteudo th,
+  .precos-conteudo td {
+    padding: 6px 4px;
+    text-align: center;
+    word-break: break-word;
+  }
+
+  .precos-conteudo::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .precos-conteudo::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+  }
+
+  .depoimento-revelacao {
     display: none;
   }
 
@@ -140,137 +159,133 @@
 }
 
 @media (max-width: 700px) {
-  .home .titulo-principal h1{
+  .home .titulo-principal h1 {
     font-size: 17px;
     margin-top: -10px;
     margin-bottom: 5px;
   }
 
-  .home .botao{
+  .home .botao {
     display: flex;
     gap: 10px;
   }
 
-  .home .bloco{
+  .home .bloco {
     display: none;
     gap: 10px;
   }
 
-  .btna{
+  .btna {
     padding: 0.5rem 1.5rem;
     font-size: 12px;
   }
 
-  .frase-destaque{
+  .frase-destaque {
     font-size: 15px;
   }
 
-  .depoimento-revelacao{
+  .depoimento-revelacao {
     opacity: 0;
   }
 
-  .gestante .imagens{
+  .gestante .imagens {
     gap: 10px;
   }
 
-  .gestante .imagens img{
+  .gestante .imagens img {
     height: 100px;
   }
 
-  .gestante .block{
+  .gestante .block {
     display: flex;
     margin: 10px;
     gap: 10px;
   }
 
-  .gestante .block div{
+  .gestante .block div {
     height: 100px;
     width: 200px;
     font-size: 10px;
     padding: 5px;
   }
 
-  .gestante .block div p{
+  .gestante .block div p {
     font-size: 12px;
   }
 
-  .gestante .block div i{
+  .gestante .block div i {
     font-size: 16px;
     padding-bottom: 5px;
   }
-  
-  .gestante .frase{
+
+  .gestante .frase {
     font-size: 11px;
   }
 
-  .gestante .frase p{
+  .gestante .frase p {
     line-height: 15px;
   }
 
-  .gestante button{
+  .gestante button {
     height: 30px;
     width: 120px;
     display: block;
     margin: 10px auto;
-    
   }
 
-  .gestante button span{
+  .gestante button span {
     font-size: 12px;
   }
-  .newborn p{
+
+  .newborn p {
     font-size: 17px;
     margin: 0px 10px;
   }
 
-  .newborn .imagens{
+  .newborn .imagens {
     display: flex;
     gap: 10px;
   }
 
-  .newborn .imagens img{
+  .newborn .imagens img {
     height: 70px;
     width: 100px;
   }
 
-  .newborn .block{
+  .newborn .block {
     display: flex;
     margin: 10px 50px;
     gap: 10px;
-
   }
 
-  .newborn .block div{
+  .newborn .block div {
     height: 100px;
     width: 200px;
     font-size: 10px;
     padding: 5px;
   }
 
-  .newborn .block div h3{
+  .newborn .block div h3 {
     font-size: 14px;
   }
-  .newborn .block div p{
+
+  .newborn .block div p {
     font-size: 12px;
   }
 
-  .newborn .block div i{
+  .newborn .block div i {
     font-size: 16px;
     padding-bottom: 0px;
   }
 
-  .newborn button{
+  .newborn button {
     height: 30px;
     width: 120px;
     display: block;
     margin: 10px auto;
-    
   }
 
-  .newborn button span{
+  .newborn button span {
     font-size: 12px;
   }
-
-
-
 }
