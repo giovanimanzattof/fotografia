@@ -188,6 +188,10 @@
     font-size: 12px;
   }
 
+  .vantagens-revelacao ul li{
+    width: 90%;
+  }
+
   .frase-destaque {
     font-size: 15px;
   }
@@ -218,7 +222,7 @@
   }
 
   .gestante .block div p {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .gestante .block div i {
@@ -227,11 +231,11 @@
   }
 
   .gestante .frase {
-    font-size: 11px;
+    font-size: 9px;
   }
 
   .gestante .frase p {
-    line-height: 15px;
+    line-height: 12px;
   }
 
   .gestante button {
@@ -274,15 +278,15 @@
   }
 
   .newborn .block div h3 {
-    font-size: 14px;
+    font-size: 10px;
   }
 
   .newborn .block div p {
-    font-size: 12px;
+    font-size: 9px;
   }
 
   .newborn .block div i {
-    font-size: 16px;
+    font-size: 13px;
     padding-bottom: 0px;
   }
 
