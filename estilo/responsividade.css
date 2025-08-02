@@ -9,6 +9,10 @@
     font-size: 95%;
   }
 
+  body{
+    overflow-x: hidden;
+  }
+
   header {
     display: none;
   }
